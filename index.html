@@ -41,8 +41,10 @@
         console.log(i);
         const j = Math.floor(Math.random() * 4);
 
-        let distanceX = Math.ceil(Math.random() * 600) + 20;
-        let distanceY = Math.ceil(Math.random() * 300) + 20;
+        let distanceX =
+          Math.ceil((Math.random() * window.innerWidth) / 2.2) + 20;
+        let distanceY =
+          Math.ceil((Math.random() * window.innerHeight) / 2.5) + 20;
         noBtnEl.style.marginLeft = sign[i] + distanceX + "px";
         noBtnEl.style.marginTop = sign[j] + distanceY + "px";
 
